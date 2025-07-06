@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "vp9gx/wcqs0u5VBIFPAbsP4lgtSujClLAXK76omGndw=",
+  "Source": "ConfigDemo.Api",
+  "BasePath": "_content/ConfigDemo.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

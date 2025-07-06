@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "ConfigDemo.Api.Controllers.ConfigController",
+    "Method": "GetName",
+    "RelativePath": "api/Config/name",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
