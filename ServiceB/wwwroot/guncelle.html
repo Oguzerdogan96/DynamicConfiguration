@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Konfigürasyon Güncelle</title>
+</head>
+<body>
+    <h2>Konfigürasyon Güncelle</h2>
+
+    <form id="updateForm">
+        <input type="hidden" id="id" />
+
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="type">Type:</label><br />
+        <select id="type" name="type" required>
+            <option value="string">string</option>
+            <option value="int">int</option>
+            <option value="bool">bool</option>
+        </select><br /><br />
+
+        <div id="valueContainer">
+            <label for="value">Value:</label><br />
+            <input type="text" id="value" name="value" required />
+        </div>
+        <br />
+
+        <label for="isActive">Is Active:</label>
+        <input type="checkbox" id="isActive" name="isActive" checked /><br /><br />
+
+        <label for="applicationName">Application Name:</label><br />
+        <select id="applicationName" name="applicationName" required>
+            <option value="SERVICE-A">SERVICE-A</option>
+            <option value="SERVICE-B">SERVICE-B</option>
+        </select><br /><br />
+
+        <button type="submit">Kaydet</button>
+    </form>
+    <button onclick="window.location.href='index.html'">Geri Dön</button>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get("id");
+
+        if (!id) {
+            alert("Geçersiz ID.");
+            window.location.href = "index.html";
+        }
+
+        document.getElementById("id").value = id;
+
+        
+        function updateValueInput(currentValue = "") {
+            const type = document.getElementById('type').value;
+            const container = document.getElementById('valueContainer');
+
+            container.innerHTML = `<label for="value">Value:</label><br />`;
+
+            if (type === 'int') {
+                container.innerHTML += `<input type="number" id="value" name="value" required value="${currentValue}">`;
+            } else if (type === 'bool') {
+                container.innerHTML += `
+                            <select id="value" name="value" required>
+                                <option value="true" ${currentValue === "true" ? "selected" : ""}>true</option>
+                                <option value="false" ${currentValue === "false" ? "selected" : ""}>false</option>
+                            </select>`;
+            } else {
+                container.innerHTML += `<input type="text" id="value" name="value" required value="${currentValue}">`;
+            }
+        }
+
+       
+        fetch(`/api/ServiceB`)
+            .then(response => response.json())
+            .then(data => {
+                const item = data[id];
+                if (!item) {
+                    alert("Veri bulunamadı.");
+                    window.location.href = "index.html";
+                }
+
+                document.getElementById("name").value = item.name;
+                document.getElementById("type").value = item.type;
+                updateValueInput(item.value); 
+                document.getElementById("isActive").checked = item.isActive;
+                document.getElementById("applicationName").value = item.applicationName;
+            });
+
+        
+        document.getElementById("type").addEventListener("change", () => {
+            updateValueInput(); 
+        });
+
+        
+        document.getElementById("updateForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const updatedModel = {
+                Name: document.getElementById("name").value,
+                Type: document.getElementById("type").value,
+                Value: document.getElementById("value").value,
+                IsActive: document.getElementById("isActive").checked,
+                ApplicationName: document.getElementById("applicationName").value
+            };
+
+            fetch(`/api/ServiceB/${id}`, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(updatedModel)
+            })
+                .then(res => {
+                    if (!res.ok) throw new Error("Güncelleme başarısız.");
+                    alert("Güncelleme başarılı.");
+                    window.location.href = "index.html";
+                })
+                .catch(err => alert(err.message));
+        });
+    </script>
+</body>
+</html>

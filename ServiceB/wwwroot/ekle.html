@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeni Konfigürasyon Ekle</title>
+</head>
+<body>
+    <h2>Yeni Konfigürasyon Ekle</h2>
+
+    <form id="configForm">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="type">Type:</label><br />
+        <select id="type" name="type" required>
+            <option value="string">string</option>
+            <option value="int">int</option>
+            <option value="bool">bool</option>
+        </select><br /><br />
+
+
+        <div id="valueContainer">
+            <label for="value">Value:</label><br />
+            <input type="text" id="value" name="value" required />
+        </div>
+
+        <label for="isActive">Is Active:</label>
+        <input type="checkbox" id="isActive" name="isActive" checked /><br /><br />
+
+        <label for="appName">Application Name:</label><br />
+        <select id="appName" name="appName" required>
+            <option value="SERVICE-A">SERVICE-A</option>
+            <option value="SERVICE-B">SERVICE-B</option>
+
+        </select><br /><br />
+
+        <button type="submit">Kaydet</button>
+    </form>
+
+    <p id="status"></p>
+
+    <script>
+
+
+        function updateValueInput() {
+            const type = document.getElementById('type').value;
+            const container = document.getElementById('valueContainer');
+
+            
+            container.innerHTML = `<label for="value">Value:</label><br />`;
+
+            if (type === 'int') {
+                container.innerHTML += `<input type="number" id="value" name="value" required />`;
+            } else if (type === 'bool') {
+                container.innerHTML += `
+            <select id="value" name="value" required>
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>`;
+            } else {
+                container.innerHTML += `<input type="text" id="value" name="value" required />`;
+            }
+        }
+
+        document.getElementById('type').addEventListener('change', updateValueInput);
+        window.onload = updateValueInput;
+
+    document.getElementById('configForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const payload = {
+            name: document.getElementById('name').value,
+            type: document.getElementById('type').value,
+            value: document.getElementById('value').value,
+            isActive: document.getElementById('isActive').checked,
+            applicationName: document.getElementById('appName').value
+        };
+        
+        fetch('/api/ServiceB', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        })
+        .then(res => {
+            if (!res.ok) throw new Error("Ekleme başarısız.");
+            return res.json();
+        })
+        .then(data => {
+            alert("Başarıyla eklendi. Listeye yönlendiriliyorsunuz.");
+            window.location.href = "index.html";
+        })
+        .catch(err => {
+            document.getElementById('status').innerText = "Hata: " + err.message;
+        });
+    });
+
+    function handleTypeChange() {
+    const type = document.getElementById("type").value;
+    const valueWrapper = document.getElementById("valueInputWrapper");
+    const boolOptions = document.getElementById("boolOptions");
+
+    if (type === "bool") {
+        valueWrapper.style.display = "none";
+        boolOptions.style.display = "block";
+    } else {
+        valueWrapper.style.display = "block";
+        boolOptions.style.display = "none";
+    }
+}
+    </script>
+
+</body>
+</html>

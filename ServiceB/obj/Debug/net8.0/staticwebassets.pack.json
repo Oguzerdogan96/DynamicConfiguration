@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Oğuzhan\\source\\repos\\ConfigDemo.Api\\ServiceB\\wwwroot\\ekle.html",
+      "PackagePath": "staticwebassets\\ekle.html"
+    },
+    {
+      "Id": "C:\\Users\\Oğuzhan\\source\\repos\\ConfigDemo.Api\\ServiceB\\wwwroot\\guncelle.html",
+      "PackagePath": "staticwebassets\\guncelle.html"
+    },
+    {
+      "Id": "C:\\Users\\Oğuzhan\\source\\repos\\ConfigDemo.Api\\ServiceB\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ServiceB.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ServiceB.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ServiceB.props",
+      "PackagePath": "build\\ServiceB.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ServiceB.props",
+      "PackagePath": "buildMultiTargeting\\ServiceB.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ServiceB.props",
+      "PackagePath": "buildTransitive\\ServiceB.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

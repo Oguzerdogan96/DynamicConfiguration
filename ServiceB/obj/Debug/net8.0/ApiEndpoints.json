@@ -1,0 +1,65 @@
+[
+  {
+    "ContainingType": "ServiceB.Controllers.ServiceBController",
+    "Method": "Get",
+    "RelativePath": "api/ServiceB",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceB.Controllers.ServiceBController",
+    "Method": "Post",
+    "RelativePath": "api/ServiceB",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ServiceB.Models.ConfigInsertModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceB.Controllers.ServiceBController",
+    "Method": "Update",
+    "RelativePath": "api/ServiceB/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "ServiceB.Models.ConfigUpdateModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceB.Controllers.ServiceBController",
+    "Method": "Delete",
+    "RelativePath": "api/ServiceB/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

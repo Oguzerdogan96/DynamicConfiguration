@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <title>ServiceB Konfigürasyon Verileri</title>
+</head>
+<body>
+    <h2>API'den Gelen Veriler</h2>
+    <button onclick="window.location.href='ekle.html'">Yeni Konfigürasyon Ekle</button>
+
+    <br /><br />
+    <label for="search">Name'e Göre Filtrele:</label>
+    <input type="text" id="search" placeholder="Konfigürasyon adı..." />
+    <br /><br />
+
+    <ul id="list"></ul>
+
+    <script>
+        let originalData = {};
+
+        function deleteItem(id) {
+            if (!confirm(`ID: ${id} silinsin mi?`)) return;
+
+            fetch(`/api/ServiceB/${id}`, {
+                method: 'DELETE'
+            })
+                .then(res => {
+                    if (!res.ok) throw new Error('Silme işlemi başarısız.');
+                    alert(`ID ${id} başarıyla silindi.`);
+                    location.reload();
+                })
+                .catch(err => alert(err.message));
+        }
+
+        function renderList(filteredData) {
+            const list = document.getElementById('list');
+            list.innerHTML = '';
+
+            Object.entries(filteredData).forEach(([id, obj]) => {
+                const li = document.createElement('li');
+
+                li.innerHTML = `
+                        <strong>ID: ${id}</strong> |
+                        Name: ${obj.name} |
+                        Type: ${obj.type} |
+                        Value: ${obj.value} |
+                        IsActive: ${obj.isActive} |
+                        ApplicationName: ${obj.applicationName}
+                    `;
+
+                const updateBtn = document.createElement('button');
+                updateBtn.textContent = "Güncelle";
+                updateBtn.style.marginLeft = "10px";
+                updateBtn.onclick = () => window.location.href = `guncelle.html?id=${id}`;
+                li.appendChild(updateBtn);
+
+                const deleteBtn = document.createElement('button');
+                deleteBtn.textContent = "Sil";
+                deleteBtn.style.marginLeft = "5px";
+                deleteBtn.onclick = () => deleteItem(id);
+                li.appendChild(deleteBtn);
+
+                list.appendChild(li);
+            });
+        }
+
+        fetch('/api/ServiceB')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Sunucu hatası: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                originalData = data;
+                renderList(originalData);
+
+                document.getElementById("search").addEventListener("input", function () {
+                    const searchTerm = this.value.toLowerCase();
+                    const filtered = Object.fromEntries(
+                        Object.entries(originalData).filter(([id, obj]) =>
+                            obj.name.toLowerCase().includes(searchTerm)
+                        )
+                    );
+                    renderList(filtered);
+                });
+            })
+            .catch(error => {
+                console.error('Veri çekme hatası:', error);
+                const list = document.getElementById('list');
+                list.innerHTML = `<li style="color:red;">Veri alınamadı: ${error.message}</li>`;
+            });
+    </script>
+</body>
+</html>
