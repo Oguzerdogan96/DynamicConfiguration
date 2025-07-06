@@ -1,0 +1,12 @@
+C:\Users\Oğuzhan\source\repos\DynamicConfiguration\DynamicConfiguration\bin\Debug\net8.0\DynamicConfiguration.deps.json
+C:\Users\Oğuzhan\source\repos\DynamicConfiguration\DynamicConfiguration\bin\Debug\net8.0\DynamicConfiguration.dll
+C:\Users\Oğuzhan\source\repos\DynamicConfiguration\DynamicConfiguration\bin\Debug\net8.0\DynamicConfiguration.pdb
+C:\Users\Oğuzhan\source\repos\DynamicConfiguration\DynamicConfiguration\obj\Debug\net8.0\DynamicConfiguration.csproj.AssemblyReference.cache
+C:\Users\Oğuzhan\source\repos\DynamicConfiguration\DynamicConfiguration\obj\Debug\net8.0\DynamicConfiguration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oğuzhan\source\repos\DynamicConfiguration\DynamicConfiguration\obj\Debug\net8.0\DynamicConfiguration.AssemblyInfoInputs.cache
+C:\Users\Oğuzhan\source\repos\DynamicConfiguration\DynamicConfiguration\obj\Debug\net8.0\DynamicConfiguration.AssemblyInfo.cs
+C:\Users\Oğuzhan\source\repos\DynamicConfiguration\DynamicConfiguration\obj\Debug\net8.0\DynamicConfiguration.csproj.CoreCompileInputs.cache
+C:\Users\Oğuzhan\source\repos\DynamicConfiguration\DynamicConfiguration\obj\Debug\net8.0\DynamicConfiguration.dll
+C:\Users\Oğuzhan\source\repos\DynamicConfiguration\DynamicConfiguration\obj\Debug\net8.0\refint\DynamicConfiguration.dll
+C:\Users\Oğuzhan\source\repos\DynamicConfiguration\DynamicConfiguration\obj\Debug\net8.0\DynamicConfiguration.pdb
+C:\Users\Oğuzhan\source\repos\DynamicConfiguration\DynamicConfiguration\obj\Debug\net8.0\ref\DynamicConfiguration.dll
