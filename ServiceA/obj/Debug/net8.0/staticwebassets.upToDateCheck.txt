@@ -1,0 +1,3 @@
+wwwroot\ekle.html
+wwwroot\guncelle.html
+wwwroot\index.html

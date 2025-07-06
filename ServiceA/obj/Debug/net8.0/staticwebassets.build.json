@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "Hash": "G7eLj/yTU9B9/3znNqu4Pi8ci5i3pVj/CKb7CC37UIw=",
+  "Source": "ServiceA",
+  "BasePath": "_content/ServiceA",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ServiceA\\wwwroot",
+      "Source": "ServiceA",
+      "ContentRoot": "C:\\Users\\Oğuzhan\\Desktop\\ConfigDemo.Api\\ServiceA\\wwwroot\\",
+      "BasePath": "_content/ServiceA",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Oğuzhan\\Desktop\\ConfigDemo.Api\\ServiceA\\wwwroot\\ekle.html",
+      "SourceId": "ServiceA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Oğuzhan\\Desktop\\ConfigDemo.Api\\ServiceA\\wwwroot\\",
+      "BasePath": "_content/ServiceA",
+      "RelativePath": "ekle#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3egovi3e62",
+      "Integrity": "BeChc0rxZ0PT43ZHvTbVD1+Ef/026rLDpIs6+vYxAB0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ekle.html"
+    },
+    {
+      "Identity": "C:\\Users\\Oğuzhan\\Desktop\\ConfigDemo.Api\\ServiceA\\wwwroot\\guncelle.html",
+      "SourceId": "ServiceA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Oğuzhan\\Desktop\\ConfigDemo.Api\\ServiceA\\wwwroot\\",
+      "BasePath": "_content/ServiceA",
+      "RelativePath": "guncelle#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f2xwc2uqj0",
+      "Integrity": "mVzG0H+Y10bHH3wR4FiWzPCIPthZjdcBCKab21ENx7k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\guncelle.html"
+    },
+    {
+      "Identity": "C:\\Users\\Oğuzhan\\Desktop\\ConfigDemo.Api\\ServiceA\\wwwroot\\index.html",
+      "SourceId": "ServiceA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Oğuzhan\\Desktop\\ConfigDemo.Api\\ServiceA\\wwwroot\\",
+      "BasePath": "_content/ServiceA",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iw2yqbl5mf",
+      "Integrity": "zsZyJIv/ROPYxvKTQTHL6DvJH+mEA9lZ/K0IQgPhFgw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "ekle.3egovi3e62.html",
+      "AssetFile": "C:\\Users\\Oğuzhan\\Desktop\\ConfigDemo.Api\\ServiceA\\wwwroot\\ekle.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3384"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BeChc0rxZ0PT43ZHvTbVD1+Ef/026rLDpIs6+vYxAB0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 08:43:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3egovi3e62"
+        },
+        {
+          "Name": "label",
+          "Value": "ekle.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BeChc0rxZ0PT43ZHvTbVD1+Ef/026rLDpIs6+vYxAB0="
+        }
+      ]
+    },
+    {
+      "Route": "ekle.html",
+      "AssetFile": "C:\\Users\\Oğuzhan\\Desktop\\ConfigDemo.Api\\ServiceA\\wwwroot\\ekle.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3384"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BeChc0rxZ0PT43ZHvTbVD1+Ef/026rLDpIs6+vYxAB0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 08:43:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BeChc0rxZ0PT43ZHvTbVD1+Ef/026rLDpIs6+vYxAB0="
+        }
+      ]
+    },
+    {
+      "Route": "guncelle.f2xwc2uqj0.html",
+      "AssetFile": "C:\\Users\\Oğuzhan\\Desktop\\ConfigDemo.Api\\ServiceA\\wwwroot\\guncelle.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4673"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mVzG0H+Y10bHH3wR4FiWzPCIPthZjdcBCKab21ENx7k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 08:43:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f2xwc2uqj0"
+        },
+        {
+          "Name": "label",
+          "Value": "guncelle.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mVzG0H+Y10bHH3wR4FiWzPCIPthZjdcBCKab21ENx7k="
+        }
+      ]
+    },
+    {
+      "Route": "guncelle.html",
+      "AssetFile": "C:\\Users\\Oğuzhan\\Desktop\\ConfigDemo.Api\\ServiceA\\wwwroot\\guncelle.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4673"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mVzG0H+Y10bHH3wR4FiWzPCIPthZjdcBCKab21ENx7k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 08:43:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mVzG0H+Y10bHH3wR4FiWzPCIPthZjdcBCKab21ENx7k="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\Oğuzhan\\Desktop\\ConfigDemo.Api\\ServiceA\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3502"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zsZyJIv/ROPYxvKTQTHL6DvJH+mEA9lZ/K0IQgPhFgw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 08:33:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zsZyJIv/ROPYxvKTQTHL6DvJH+mEA9lZ/K0IQgPhFgw="
+        }
+      ]
+    },
+    {
+      "Route": "index.iw2yqbl5mf.html",
+      "AssetFile": "C:\\Users\\Oğuzhan\\Desktop\\ConfigDemo.Api\\ServiceA\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3502"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zsZyJIv/ROPYxvKTQTHL6DvJH+mEA9lZ/K0IQgPhFgw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 08:33:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iw2yqbl5mf"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zsZyJIv/ROPYxvKTQTHL6DvJH+mEA9lZ/K0IQgPhFgw="
+        }
+      ]
+    }
+  ]
+}

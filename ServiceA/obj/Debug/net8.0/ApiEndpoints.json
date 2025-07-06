@@ -1,0 +1,65 @@
+[
+  {
+    "ContainingType": "ServiceA.Controllers.ServiceAController",
+    "Method": "Get",
+    "RelativePath": "api/ServiceA",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceA.Controllers.ServiceAController",
+    "Method": "Post",
+    "RelativePath": "api/ServiceA",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ServiceA.Models.ConfigInsertModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceA.Controllers.ServiceAController",
+    "Method": "Update",
+    "RelativePath": "api/ServiceA/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "ServiceA.Models.ConfigUpdateModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceA.Controllers.ServiceAController",
+    "Method": "Delete",
+    "RelativePath": "api/ServiceA/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
